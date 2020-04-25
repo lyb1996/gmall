@@ -1,6 +1,5 @@
 package com.steven.gmall.service;
 
-import com.steven.gmall.bean.PmsBaseAttrInfo;
 import com.steven.gmall.bean.PmsProductImage;
 import com.steven.gmall.bean.PmsProductInfo;
 import com.steven.gmall.bean.PmsProductSaleAttr;
@@ -15,4 +14,6 @@ public interface Spuservice {
     List<PmsProductSaleAttr> spuSaleAttrList(String spuId);
 
     List<PmsProductImage> spuImageList(String spuId);
+
+    List<PmsProductSaleAttr> spuSaleAttrListCheckBySku(String productId, String SkuId);
 }
